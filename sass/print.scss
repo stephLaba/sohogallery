@@ -22,6 +22,7 @@ $display:'Open Sans', sans-serif;
 
 		   body{
 		   	background: #FBFBFB;
+		   	position: relative;
 		   }
 
 
@@ -47,7 +48,7 @@ $display:'Open Sans', sans-serif;
 		  position: relative;
 		  left: 627px;
 		  top: 94px;
-		  z-index: 90;
+		  z-index: 998;
 		  // transition: all 0.1s;
 		  // -webkit-transition: all 0.1s;
 
@@ -98,19 +99,30 @@ $display:'Open Sans', sans-serif;
 		 	}
 		 }
 
-		 .z1{
-		 	z-index: 10;
-		 	position: relative;
-		 }
-
-		 .z2{
-		 	z-index: 20;
-		 	position: relative;
-		 }
-
 		 .z3{
 		 	z-index: 30;
 		 	position: relative;
+		 }
+
+		 .closed{
+			display: none;
+		 }
+
+		 .modalContent{
+		 	position: absolute;
+		 	top: 0;
+		 	left: 0;
+		 	width: 100%;
+		 	z-index: 999;
+		 	background-size: cover;
+		 	height: 100%;
+		 	background-repeat: no-repeat;
+		 	// background-attachment: fixed;
+		 		img{
+		 			
+
+		 		}
+
 		 }
 
 		 
