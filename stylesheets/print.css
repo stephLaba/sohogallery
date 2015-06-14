@@ -1,1 +1,311 @@
-.gallery img,.z3,body,h1,sub,sup{position:relative}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:dotted thin}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap;word-wrap:break-word}q{quotes:\201C \201D \2018 \2019}small{font-size:80%}sub,sup{font-size:75%;line-height:0;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0;max-width:100%}svg:not(:root){overflow:hidden}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body,figure{margin:0}button::-moz-focus-inner,input::-moz-focus-inner,legend{border:0;padding:0}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}*{box-sizing:border-box}body{background:#FBFBFB}h1,h2,h3,h4,h5,h6{font-family:"Open Sans",sans-serif}h1{border:4px solid #000;padding:40px 10px 10px;font-size:16px;display:inline-block;text-align:left;width:150px;left:627px;top:94px;z-index:998}h1:hover{-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}.main-container{width:100%;margin:0 auto}.gallery{width:670px;margin:0 auto}.gallery img{cursor:crosshair;-webkit-transition:all .1s;transition:all .1s}.gallery img:hover{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2);z-index:80}.gallery .img1{right:10px}.gallery .img2{left:300px;top:-130px}.gallery .img3{right:10px;top:-500px}.z3{z-index:30}.closed{display:none}.modalContent{position:absolute;top:0;left:0;width:100%;z-index:999;background-size:cover;height:100%;background-repeat:no-repeat}
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/print.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/print.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 5, ../sass/print.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 5, ../sass/print.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 5, ../sass/print.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 5, ../sass/print.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 5, ../sass/print.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 5, ../sass/print.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 5, ../sass/print.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 5, ../sass/print.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 5, ../sass/print.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 5, ../sass/print.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 5, ../sass/print.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 5, ../sass/print.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 5, ../sass/print.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 5, ../sass/print.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 5, ../sass/print.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 5, ../sass/print.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 5, ../sass/print.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 5, ../sass/print.scss */
+img {
+  border: 0;
+}
+
+/* line 5, ../sass/print.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 5, ../sass/print.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 5, ../sass/print.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 5, ../sass/print.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 5, ../sass/print.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 6, ../sass/print.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 6, ../sass/print.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 6, ../sass/print.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 6, ../sass/print.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 6, ../sass/print.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 6, ../sass/print.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/print.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 6, ../sass/print.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/print.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 10, ../sass/print.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =============================================================================
+             	Variables    
+   ========================================================================== */
+/* =============================================================================
+                   Global Styles -- start
+   ========================================================================== */
+/* line 23, ../sass/print.scss */
+body {
+  background: #FBFBFB;
+}
+
+/* line 28, ../sass/print.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 32, ../sass/print.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* =============================================================================
+   		                   Gallery Styles -- start
+ ========================================================================== */
+/* line 40, ../sass/print.scss */
+h1 {
+  border: 4px solid black;
+  padding: 40px 10px 10px 10px;
+  font-size: 16px;
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  position: relative;
+  left: 627px;
+  top: 94px;
+  z-index: 90;
+}
+/* line 54, ../sass/print.scss */
+h1:hover {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 63, ../sass/print.scss */
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 68, ../sass/print.scss */
+.gallery {
+  width: 670px;
+  margin: 0 auto;
+}
+/* line 72, ../sass/print.scss */
+.gallery img {
+  position: relative;
+  cursor: crosshair;
+  -webkit-transition: all 0.1s;
+  /* Safari */
+  transition: all 0.1s;
+}
+/* line 78, ../sass/print.scss */
+.gallery img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 80;
+}
+/* line 86, ../sass/print.scss */
+.gallery .img1 {
+  right: 10px;
+}
+/* line 90, ../sass/print.scss */
+.gallery .img2 {
+  left: 300px;
+  top: -130px;
+}
+/* line 95, ../sass/print.scss */
+.gallery .img3 {
+  right: 10px;
+  top: -500px;
+}
+
+/* line 101, ../sass/print.scss */
+.z1 {
+  z-index: 10;
+  position: relative;
+}
+
+/* line 106, ../sass/print.scss */
+.z2 {
+  z-index: 20;
+  position: relative;
+}
+
+/* line 111, ../sass/print.scss */
+.z3 {
+  z-index: 30;
+  position: relative;
+}
