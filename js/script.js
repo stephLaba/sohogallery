@@ -31,59 +31,57 @@ $(function() {
 
 	}
 
+
+
 var $galleryImages = $('.thumbnail a');
 
-var wWidth = $(window).innerWidth();
-
-	// console.log($galleryImages);
-	//1. when user clicks on thumbnail show modal box
-	$galleryImages.on('click', function(e){
-		e.preventDefault();
-		var index = $galleryImages.index($(this));
-		//Get full source
-		var src = $(this).data('full');
+// console.log($galleryImages);
+//1. when user clicks on thumbnail show modal box
+$galleryImages.on('click', function(e){
 
 
-		$('.modalContent').css('background-image',"url(" + src + ")").data('index',index);
-
-		// $('.modalContent').css("width",wWidth);
-
-			// $(window).mousemove(function(e) {
-		 //    $("html, body").scrollTop(function() {
-		 //    	console.log("hello");
-   //      	var h = $(window).height();
-   //      	var y = e.clientY - h / 2;
-   //      	return y;
-
-		 //    });
-
-		    // $(document).on('mousemove', function(e){
-		    // 	var mousePos = (e.clientY/$(window).height())*1000;
-		    // 	$('.modalContent').css('backgroundPosition', mousePos+'px');
-		    // }); 
+	e.preventDefault();
+	var index = $galleryImages.index($(this));
+	//Get full source
+	var src = $(this).data('full');
+	//Get full description
+	var decp = $(this).data('desc')
+	var wWidth = $(document).innerWidth();
+	var wHeight = $(document).innerHeight();
 
 
-		$('.modalContent').removeClass('closed');
+	// $('.modalContent img').attr('src',src).data('index',index);
 
-		// });
-		
+	$('.modalContent').css({
+		// 'background':"url(" + src + ")",
+		'backgroundPosition' : "50%",
+		'backgroundSize' : "cover",
+		'backgroundRepeat' : 'no-repeat',
+		'min-height': wHeight,
+		'min-width': wWidth
+	}).data('index',index);
+	
+	$('.modalContent').removeClass('closed');
+
+	$(".modalContent img").attr('src', src);
+
+	$( ".modalContent img" ).mousemove(function( event ) {
+	  var pageCoords = event.pageY;
+	 console.log(pageCoords);
+	 // $(this).css({
+	 // 	'top': '10px',
+	 // 	'backgroundPositionX': 50 +'%',
+	 // 	'height': 'auto'
+
+	 // 		})
+		$(this).css('top', '0').css('top', '-=' + pageCoords + 'px' );
+		});
+
 	});
 
+});
 
-		$('.selected').removeClass('selected');
-		$(this).addClass('selected');
-		console.log('selected!');
 
-	//2. have modal box get full-size image
-		// the second src (without apostrophes) is the variable
 
-		// var $minHeight = 800;
-		// var $height = $('.modal').height();
-		// if ( $('.modal').$height > $minHeight) {
-		// 	$(this).css("width", "40%");
-		// }
-
-		console.log('imagessssss');
-	});
 
 
